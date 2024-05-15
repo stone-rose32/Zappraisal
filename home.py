@@ -21,8 +21,26 @@ st.write("Rate restaurants based on food, service, and ambience.")
 # User input
 restaurant_name = st.text_input("Enter restaurant name:")
 food_rating = st.slider("Food rating (1-5)", 1, 5)
+with st.expander("Metric Definition"):
+    st.write('''
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    ''')
 service_rating = st.slider("Service rating (1-5)", 1, 5)
+with st.expander("Metric Definition"):
+    st.write('''
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    ''')
 ambience_rating = st.slider("Ambience rating (1-5)", 1, 5)
+with st.expander("Metric Definition"):
+    st.write('''
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    ''')
 
 # Update rankings
 if st.button("Submit"):
